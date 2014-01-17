@@ -11,41 +11,23 @@ The OAuth 2.0 Authorization Framework, and Bearer Token Usage
 
 # Briefing 
 
-The OAuth 2.0 Authorization Framework, and Bearer Token Usage are IETF specifications for user authorized access to protected resources. 
+ClearButton is a service that enables individuals to know where and by whom their personal data is being stored.  
 
 Authoritative Sources: 
-* Internet Engineering Task Force (IETF) Request for Comments 6749 (available at [http://tools.ietf.org/html/rfc6749](http://tools.ietf.org/html/rfc6749))
-* Internet Engineering Task Force (IETF) Request for Comments 6750 (available at [http://tools.ietf.org/html/rfc6750](http://tools.ietf.org/html/rfc6750)
-* Privacy Requirements for IETF Protocols (available at [https://datatracker.ietf.org/doc/draft-cooper-ietf-privacy-requirements/?include_text=1](https://datatracker.ietf.org/doc/draft-cooper-ietf-privacy-requirements/?include_text=1))
+[TBD]
 
 
 # Problem
-* In the traditional client-server authentication model, the client requests an access-restricted resource (protected resource) on the server by authenticating with the server using the resource owner's credentials.  In order to provide third-party applications access to restricted resources, the resource owner shares its credentials with the third party.  This creates several problems and limitations:
+* While individuals are aware that their data is continually being held and transferred among corporate and government bodies, there is no centralized and easy-to-access means to know which entities store an individual's personal data, and what data in particular is being stored.
  
-   * Third-party applications are required to store the resource
-  	owner's credentials for future use, typically a password in
-  	clear-text.
- 
-   *  Servers are required to support password authentication, despite
-  	the security weaknesses inherent in passwords.
- 
-   *  Third-party applications gain overly broad access to the resource
-  	owner's protected resources, leaving resource owners without any
-  	ability to restrict duration or access to a limited subset of
-  	resources.
- 
-   *  Resource owners cannot revoke access to an individual third party
-  	without revoking access to all third parties, and must do so by
-  	changing the third party's password.
- 
-   * Compromise of any third-party application results in compromise of
-  	the end-user's password and all of the data protected by that
-  	password.
+   * Individuals click "I Agree" to convoluted Terms of Service that give entities broad access to an individual's personal data
+   * Individuals' personal data are held 
  
 # Proposed Solution
   * ClearButton is a service allowing individuals to know when and where their personal data is stored. Individuals may sign up for the service in a manner similar to signing up for the Do Not Call registry. Once signed up for the service, an individual will receive notification each time a new entity (usually a corporation) comes to possess her data. Depending on the individual’s preferences, she may receive a notification whenever a new entity holds her data, whenever there is a significant shift in the type of data held or the type of entities holding the data, or according to a schedule in line with the individual’s preferences.
-When an individual receives a notification and wants to follow up on who now holds her data, she can click the notification provided to her to be taken to the ClearButton service. Upon login, she will be met with ClearButton Notifications center. For each entity holding the individual’s data, the Notifications Center will detail the entity name, type of data held, and date that the data came to be held by the entity. (It may also include a label indicating how the data is being used).
-From the ClearButton Notifications center, the individual may then click through to any individual entity website. She will at this point leave the ClearButton domain and authenticate her identity on the entity’s site. The entity site presents what data it holds with respect to the individual. Depending on the entity's preferences as well as its legal obligations, the entity may choose to only display general metadata as to the information it holds for a particular individual, or it may provide the individual with a full description of the data that the entity holds for that individual. If the entity provides the individual with their full data, that data can be downloaded into the individual’s Personal Data Store. This Personal Data Store may be hosted through independent parties meeting regulatory minimums of safety and security, or it may be hosted on the ClearButton site itself. Once the individual holds her information in a Personal Data Store, she has the opportunity to update and correct it. Then, the individual may elect to share her corrected data with new and different entities as she sees fit. Because the individual is best able to compile accurate data about herself, entities will significantly prefer to use this data. Entities must therefore provide some sort of benefit to individuals in return for their data, in many cases the promise of better services as a result of the analytics that the individual’s data makes possible.
+  * When an individual receives a notification and wants to follow up on who now holds her data, she can click the notification provided to her to be taken to the ClearButton service. Upon login, she will be met with ClearButton Notifications center. For each entity holding the individual’s data, the Notifications Center will detail the entity name, type of data held, and date that the data came to be held by the entity. (It may also include a label indicating how the data is being used).
+  * From the ClearButton Notifications center, the individual may then click through to any individual entity website. She will at this point leave the ClearButton domain and authenticate her identity on the entity’s site. The entity site presents what data it holds with respect to the individual. Depending on the entity's preferences as well as its legal obligations, the entity may choose to only display general metadata as to the information it holds for a particular individual, or it may provide the individual with a full description of the data that the entity holds for that individual. If the entity provides the individual with their full data, that data can be downloaded into the individual’s Personal Data Store. This Personal Data Store may be hosted through independent parties meeting regulatory minimums of safety and security, or it may be hosted on the ClearButton site itself. 
+  * Once the individual holds her information in a Personal Data Store, she has the opportunity to update and correct it. Then, the individual may elect to share her corrected data with new and different entities as she sees fit. Because the individual is best able to compile accurate data about herself, entities will significantly prefer to use this data. Entities must therefore provide some sort of benefit to individuals in return for their data, in many cases the promise of better services as a result of the analytics that the individual’s data makes possible.
 
 
 
