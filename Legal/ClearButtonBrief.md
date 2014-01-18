@@ -1,6 +1,6 @@
  
-The OAuth 2.0 Authorization Framework, and Bearer Token Usage
- 
+# ClearButton Overview and Assessment Brief
+
 # [Problem](#problem-1)
 # [Proposed Solution](#proposed-solution-1)
 # [Method of Implementation](#method-of-implementation-1)
