@@ -18,16 +18,21 @@ Authoritative Sources:
 
 
 # Problem
-* While individuals are aware that their data is continually being held and transferred among corporate and government bodies, there is no centralized and easy-to-access means to know which entities store an individual's personal data, and what data in particular is being stored.
+* While individuals are aware that their data is continually being held and transferred among corporate and government bodies, there is no centralized and easy-to-access means by which an individual may find out which entities store an individual's personal data, and what data in particular is being stored.
  
    * Individuals click "I Agree" to convoluted Terms of Service that give entities broad access to an individual's personal data
-   * Individuals' personal data are held 
+   * Individuals' personal data are transferred among entities who may not have agreed to the original Terms of Service governing use of the individual's data
  
 # Proposed Solution
-  * ClearButton is a service allowing individuals to know when and where their personal data is stored. Individuals may sign up for the service in a manner similar to signing up for the Do Not Call registry. Once signed up for the service, an individual will receive notification each time a new entity (usually a corporation) comes to possess her data. Depending on the individual’s preferences, she may receive a notification whenever a new entity holds her data, whenever there is a significant shift in the type of data held or the type of entities holding the data, or according to a schedule in line with the individual’s preferences.
-  * When an individual receives a notification and wants to follow up on who now holds her data, she can click the notification provided to her to be taken to the ClearButton service. Upon login, she will be met with ClearButton Notifications center. For each entity holding the individual’s data, the Notifications Center will detail the entity name, type of data held, and date that the data came to be held by the entity. (It may also include a label indicating how the data is being used).
-  * From the ClearButton Notifications center, the individual may then click through to any individual entity website. She will at this point leave the ClearButton domain and authenticate her identity on the entity’s site. The entity site presents what data it holds with respect to the individual. Depending on the entity's preferences as well as its legal obligations, the entity may choose to only display general metadata as to the information it holds for a particular individual, or it may provide the individual with a full description of the data that the entity holds for that individual. If the entity provides the individual with their full data, that data can be downloaded into the individual’s Personal Data Store. This Personal Data Store may be hosted through independent parties meeting regulatory minimums of safety and security, or it may be hosted on the ClearButton site itself. 
-  * Once the individual holds her information in a Personal Data Store, she has the opportunity to update and correct it. Then, the individual may elect to share her corrected data with new and different entities as she sees fit. Because the individual is best able to compile accurate data about herself, entities will significantly prefer to use this data. Entities must therefore provide some sort of benefit to individuals in return for their data, in many cases the promise of better services as a result of the analytics that the individual’s data makes possible.
+
+  * ClearButton is a service allowing individuals to know when and where their personal data is stored. Individuals may sign up for the service in a manner similar to signing up for the Do Not Call registry. Once signed up for the service, an individual will receive notification each time a new Information Holder (usually a corporation) comes to possess her data. The individual may consult the ClearButton Notifications Center and the individual Information Holder's website to determine what type of data is being stored, and the way the data is being used. At that point, the individual chooses how to manage her data: she may download her data to her Personal Data Store, update and correct the data, share the data with other Information Holders, or revoke permission for the Information Holder to use her data. 
+  
+   
+  [the following will be split up and moved to the "steps" section:]
+  * 
+  * When an individual receives a notification and wants to follow up on who now stores her data, she can click the notification provided to her to be taken to the ClearButton service. Upon login, she will be met with ClearButton Notifications Center. For each entity storing the individual’s data, the Notifications Center will detail the Information Holder name, type of data held, and time at which the data came to be held by the Information Holder. (TBD: It may also include a label indicating how the data is being used).
+  * From the ClearButton Notifications Center, the individual may then click through to any individual Information Holder's website. She will at this point leave the ClearButton domain and authenticate her identity on the Information Holder’s site. The Information Holder site presents what data it holds with respect to the individual. Depending on the Information Holder's preferences (and legal obligations), the Information Holder may choose to only display general metadata as to the information it stores for a particular individual, or it may provide the individual with a full description of the data that the Information Holder stores for that individual. If the Information Holder provides the individual with their full data, that data can be downloaded into the individual’s Personal Data Store. This Personal Data Store may be hosted through independent parties meeting regulatory minimums of safety and security, or it may be hosted on the ClearButton site itself. 
+  * Once the individual holds her information in a Personal Data Store, she has the opportunity to update and correct it. Then, the individual may elect to share her corrected data with new and different Information Holders as she sees fit. Because the individual is best able to compile accurate data about herself, Information Holders will significantly prefer to use this current and correct data. Information Holders must therefore provide some sort of benefit to individuals in return for their data, in many cases the promise of better services as a result of the analytics that each individual’s data makes possible.
 
 
 
@@ -38,18 +43,17 @@ Authoritative Sources:
  
 [**NOTE:** Below is a placeholder from the OAuth2 Brief]
 
-   (A)  The client requests authorization from the resource owner.  The
-    	authorization request can be made directly to the resource owner , or preferably indirectly via the authorization server as an intermediary.
+   (A)  An Individual signs up for the ClearButton service in a manner similar to signing up for the Do Not Call registry.
  
-   (B)  The client receives an authorization grant, which is a credential representing the resource owner's authorization. The authorization grant type depends on the method used by the client to request authorization and the types supported by the authorization server.
+   (B)  An individual will receive notification each time a new Information Holder (usually a corporation) comes to possess her data. Depending on the individual’s preferences, she may receive a notification whenever a new Information Holder comes to possess her data, whenever there is a significant shift in the type of data held or the type of Information Holders storing the data, or according to a schedule in line with the individual’s preferences.
  
-   (C)  The client requests an access token by authenticating with the authorization server and presenting the authorization grant.
+   (C)  
  
-   (D)  The authorization server authenticates the client and validates the authorization grant, and if valid, issues an access token.
+   (D)  
  
-   (E)  The client requests the protected resource from the resource server and authenticates by presenting the access token.
+   (E)  
  
-   (F)  The resource server validates the access token, and if valid, serves the request.
+   (F)  
 
 # Scenarios in Context
 
@@ -58,11 +62,11 @@ Authoritative Sources:
 [**NOTE:** Below is a placeholder from the OAuth2 Brief]
 
 
-* “Rights Holder” – Customer (in the business sense); Principal (in the legal sense); Resource Owner (in the technical sense). This party owns the information (stored by the Information Holder), and authorizes the Temporary Access Holder to access that information on her behalf.
+* “Individual” – Civilian (in the government sense); Customer (in the business sense); Principal (in the legal sense); Resource Owner (in the technical sense). This party owns the information (stored by the Information Holder), and utilizes the ClearButton service to understand which information is being stored.
 
-* “Information Holder” - Information Host (in the business sense); Agent (in the legal sense); Resource Server and Authorization Server (in the technical sense). This party stores the information belonging to the Rights Holder. 
+* “Information Holder” - Corporation or government agency (in the government sense); Information Host (in the business sense); Agent (in the legal sense). This party stores the information belonging to the Rights Holder. 
 
-* “Temporary Access Holder” - Requesting Party (in the business sense); Agent (in the legal sense); Client (in the technical sense). This party provides a service to the Rights Holder that requires information stored by the Information Holder. 
+* “ClearButton Service" - Government agency (in the government sense); Agent (in the legal sense); [Broker] (in the business sense). 
 
 ## General Description of Interactions
 
